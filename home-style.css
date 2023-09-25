@@ -1,0 +1,329 @@
+body {
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 600px) {
+    .mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .media {
+        display: none;
+    }
+
+    body {
+        background-color: black;
+        width: 100%;
+        height: 100%;
+    }
+
+    .titulo {
+        position: absolute;
+        font-size: larger;
+        left: 12%;
+        margin-top: 95px;
+
+    }
+   
+    .titulo1 {
+        position: absolute;
+        font-size: larger;
+        margin-top: 121px;
+        left: 12%;
+    }
+
+    #home {
+        margin-left: 8px;
+    }
+
+    .navbar-mobile {
+        display: none;
+    }
+
+    .navbar {
+        border-radius: 4rem;
+        top: -49px;
+        margin-top: 136px;
+        list-style: none;
+        position: initial;
+        background-color: black;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        display: none;
+    }
+
+    .mobile-list {
+
+        padding-left: 20px;
+        gap: 60px;
+    }
+
+    .projetos {
+        position: absolute;
+    }
+
+    .contato {
+        padding-top: 100px;
+        margin-left: -45px;
+        gap: 20px;
+    }
+
+    .container {
+        position: absolute;
+        display: inline-block;
+        cursor: pointer;
+        top: 37px;
+
+    }
+    .dropdown-mobile{
+        top: -61px;
+    position: relative;}
+
+    .linkedin img {
+        display: none;
+    }
+
+    /* Rotate first bar */
+    .change .hamburguer1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+
+    /* Fade out the second bar */
+    .change .hamburguer2 {
+        opacity: 0;
+    }
+
+    /* Rotate last bar */
+    .change .hamburguer3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+
+    .hamburguer1,
+    .hamburguer2,
+    .hamburguer3 {
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+
+    .perfil {
+        position: absolute;
+        border-radius: 2rem;
+        width: 270px !important;
+        height: 270px !important;
+    }
+    
+    .camada-perfil {
+        width: 290px !important;
+        height: 290px !important;
+        position: absolute;
+
+        background: #fff;
+        top: 170px;
+        left: -25%;  
+        border-radius: 2rem;
+        
+    }
+    .perfil-card{
+        width: 200px !important;
+        height: 200px !important;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+    }
+    .sobre{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        align-items: center;
+    }
+    .sobre-perfil p{
+        font-size: larger;
+        
+        padding: 30px;
+    }
+    .habilidades{
+        position: relative;
+        top: 298px;
+    }
+   
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+
+}
+
+.nav-list {
+    display: flex;
+    gap: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    outline: none;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.projetos {
+    display: flex;
+}
+
+.triangulo {
+
+    border-top: 5px solid transparent;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid white;
+    background-color: transparent;
+    width: 2px;
+    height: 0;
+    margin-top: 10px;
+
+}
+
+.projetos:hover .triangulo {
+    transition-duration: 0.5s;
+    transform: rotate(180deg);
+}
+
+.projetos:hover .dropdown-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 63px;
+
+}
+
+.mobile-list {
+    display: none;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+
+
+.contato {
+    display: flex;
+
+}
+
+.github img {
+    border-radius: 100%;
+    width: 30px;
+    background-color: white;
+}
+
+.linkedin img {
+    margin-top: 19px;
+    width: 39px;
+    height: 39px;
+}
+
+.linkedin-mobile img {
+    width: 39px;
+    height: 39px;
+}
+
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.titulo::after {
+    margin-left: 5px;
+    opacity: 1;
+
+}
+
+.titulo1::after {
+    content: "|";
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.perfil {
+    width: 400px;
+    height: 400px;
+    padding-top: 2%;
+    border-radius: 2rem;
+}
+
+.camada-perfil {
+    display: flex;
+    justify-content: center;
+    background: #fff;
+    width: 430px;
+    height: 430px;
+    border-radius: 2rem;
+    
+}
+.perfil-card{
+    display: flex;
+    justify-content: center;
+}
+
+.sobre{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.sobre-perfil p{
+    color: #fff;
+    width: 206px;
+   font-size: larger;
+    
+}
+
+.habilidades{
+    text-align: center;
+    color: #fff;
+    
+}
+.habilidades img{
+    width: 20px;
+   
+}
+.habilidades h3{
+    transition: .9s;
+}
+.habilidades h3:hover{
+    transform: scale(1.9);
+}
