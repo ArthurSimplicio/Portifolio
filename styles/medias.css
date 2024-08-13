@@ -71,9 +71,56 @@
      .titles{
         display: flex;
     }
+    article .titles{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    article .about{
+        display: flex;
+        justify-content: space-between;
+    }
+    article .about-me{
+        width: 50vw;
+    }
     article .desc{
         overflow: hidden;
         font-size: 1.5rem;
-        padding: 0 220px;
+        padding: 0 20px;
+    }
+    article .stack{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+@media (min-width:425px) and (max-width:470px){
+    article .stack{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    
+}
+@media (min-width:631px) and (max-width:1020px){
+    article .stack{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-column: auto;
+    }
+}
+@media (min-width:1020px){
+    .about{
+        padding: 0 60px;
+    }
+    aside{
+        padding-top: 0;
+    }
+}
+
+@media (min-width:470px) and (max-width:745px) {
+    article .stack{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }

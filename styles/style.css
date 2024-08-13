@@ -110,26 +110,6 @@ section img {
     gap: 1rem;
 }
 
-#firstTitle::after {
-
-    content: "|";
-    margin-left: 1px;
-    opacity: 1;
-    animation: pisca .7s infinite;
-
-}
-@keyframes pisca {
-
-    0%,
-    100% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 0;
-    }
-}
-
 .title {
     font-size: 1.6rem;
     text-align: center;
@@ -143,13 +123,45 @@ section .title span {
     font-size: 1.3rem;
     text-align: center;
 }
+
+aside{
+    display: flex;
+    padding-top: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
 article .titles{
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
+}
+article .stack{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: center;
     
 }
-.about{
+article h3{
+    font-size: 2rem;
+    text-align: center;
+    padding:  0 0 20px 0;
 
+}
+article .tech{
+    border: #1c1c2a solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 103.48px;
+    padding: 15px;
+    border-radius: 1rem;
+}
+
+article .tech img{
+    width: 3.4rem;
+    height: 50.77px;
 }
