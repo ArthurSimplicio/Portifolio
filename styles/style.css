@@ -12,6 +12,7 @@
     --red: #d62a23;
     --white: #f1f1f1;
     --blue: #00ff;
+    --purple: #55498C;
 }
 
 .logo {
@@ -116,7 +117,7 @@ section img {
 }
 
 section .title span {
-    color: #55498C;
+    color: var(--purple);
 }
 
 .desc {
@@ -159,9 +160,50 @@ article .tech{
     width: 103.48px;
     padding: 15px;
     border-radius: 1rem;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+}
+article .tech:hover{
+transform: scale(1.2);
 }
 
 article .tech img{
     width: 3.4rem;
     height: 50.77px;
+}
+.about-me{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me .title{
+    padding: 20px 0;
+}
+.services{
+    width: 50vw;
+}
+.my-services{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.service{
+    border: var(--purple) solid 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: .5rem;
+    padding: 15px 10px 20px;
+}
+.service-title{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.service-desc{
+    font-size: 1.2rem;
+    font-weight: 500;
 }

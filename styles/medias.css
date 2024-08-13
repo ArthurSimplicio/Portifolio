@@ -124,3 +124,16 @@
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
+@media (max-width:425px){
+    .services{
+        width: 70vw;
+    }
+}
+@media (max-width:910px){
+    
+    .my-services{
+        display: grid;
+        grid-template-columns: 1fr ;
+    
+    }
+}
