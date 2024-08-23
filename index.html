@@ -6,20 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/medias.css">
-    <title>Document</title>
+    <title>Arthur Portifolio</title>
 </head>
 
 <body>
     <main>
         <header>
             <nav class="navigation">
-                <a href="#" class="logo"><span class="name">Arthur</span><span class="dev">DEV</span><span class="name">Simplício</span></a>
+                <a href="#" class="logo"><span class="name">Arthur</span><span class="dev">DEV</span><span
+                        class="name">Simplício</span></a>
                 <ul class="nav-menu">
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#" class="about1">Sobre</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#" id="home1">Início</a></li>
+                    <li><a href="#" id="about">Sobre</a></li>
+                    <li><a href="#" id="projects">Projetos</a></li>
+                    <li id="github">
+                        <div class="mobile-contact">
+                            <a href="Currículo Arthur.pdf" download="">
+                                <div class="curriculum">Baixar CV</div>
+                            </a>
+                            <a href="https://github.com/ArthurSimplicio" target="_blank"><img src="assets/github.png"
+                                    alt=""></a>
+                        </div>
+                    </li>
                 </ul>
+                <div class="contact">
+                    <a href="Currículo Arthur.pdf" download="">
+                        <div class="curriculum">Baixar CV</div>
+                    </a>
+                    <a href="https://github.com/ArthurSimplicio" target="_blank">
+                        <div class="github">
+                            <img src="assets/github.png" alt="">
+                        </div>
+                    </a>
+                </div>
                 <div class="menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -27,81 +46,303 @@
                 </div>
             </nav>
         </header>
-        <section>
+        <section class="home">
             <img src="assets/dev.svg" alt="">
-            <div class="titles">
+            <div class="titles" id="titles">
                 <h1 class="title">Olá, meu nome é <span>Arthur Simplício</span></h1>
-                <p class="desc">Já estou trabalhando como voluntário aprimorando minhas habilidades criação de interfaces bonitas e intuitivas. Minhas principais habilidades incluem: <strong>React/NextJS, Tailwind CSS, Javascript/Typescript e Flutter</strong></p>
+                <p class="desc">Já estou trabalhando como voluntário aprimorando minhas habilidades criação de
+                    interfaces bonitas e intuitivas. Minhas principais habilidades incluem: <strong>React/NextJS,
+                        Tailwind CSS, Javascript/Typescript e Flutter</strong></p>
+                <a href="https://www.linkedin.com/in/arthur-simpl%C3%ADcio/" target="_blank"><button
+                        class="linkedin">Linkedin</button></a>
             </div>
         </section>
-        <article class="titles" id="about">
+        <article class="titles">
             <div class="about">
                 <div class="about-me">
                     <div>
                         <h2 class="title">Sobre Mim</h2>
-                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aliquam aliquid labore atque quas hic ut fugit officiis molestiae aspernatur doloremque, quae ea tempora earum in est, repudiandae culpa beatae.</p>
+                        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur aliquam
+                            aliquid labore atque quas hic ut fugit officiis molestiae aspernatur doloremque, quae ea
+                            tempora earum in est, repudiandae culpa beatae.</p>
                     </div>
                     <div class="services">
-                       <p class="title">Serviços</p>
-                       <div class="my-services">
-                        <div class="service">
-                            <p class="service-title">Criação de Sites</p>
-                            <p class="service-desc">Transformo suas ideias em um site atrativo, com foco em transmitir sua mensagem de forma eficaz e clara.</p>
+                        <p class="title">Serviços</p>
+                        <div class="my-services">
+                            <div class="service">
+                                <p class="service-title">Criação de Sites</p>
+                                <p class="service-desc">Transformo suas ideias em um site atrativo, com foco em
+                                    transmitir sua mensagem de forma eficaz e clara.</p>
+                            </div>
+                            <div class="service">
+                                <p class="service-title">Otimização de SEO</p>
+                                <p class="service-desc">Aumento a visibilidade de seu site em mecanismos de busca
+                                    através de estratégias de SEO para melhorar o tráfego orgânico.</p>
+                            </div>
+                            <div class="service">
+                                <p class="service-title">Criação de Landing Pages</p>
+                                <p class="service-desc">Tiro sua ideia do papel e crio uma página para converter
+                                    visitantes em clientes utilizando técnicas de design e marketing como: Copywriting e
+                                    persuasão.</p>
+                            </div>
+                            <div class="service">
+                                <p class="service-title">Criação de Aplicativos</p>
+                                <p class="service-desc">Faço sua ideia parar em seu celular, criando um aplicativo para
+                                    que os outros possam baixar sua solução pelo celular delas.</p>
+                            </div>
                         </div>
-                        <div class="service">
-                            <p class="service-title">Otimização de SEO</p>
-                            <p class="service-desc">Aumento a visibilidade de seu site em mecanismos de busca através de estratégias de SEO para melhorar o tráfego orgânico.</p>
-                        </div>
-                        <div class="service">
-                            <p class="service-title">Criação de Landing Pages</p>
-                            <p class="service-desc">Tiro sua ideia do papel e crio uma página para converter visitantes em clientes utilizando técnicas de design e marketing como: Copywriting e persuasão.</p>
-                        </div>
-                        <div class="service">
-                            <p class="service-title">Criação de Aplicativos</p>
-                            <p class="service-desc">Faço sua ideia parar em seu celular, criando um aplicativo para que os outros possam baixar sua solução pelo celular delas.</p>
-                        </div>
-                       </div>
                     </div>
                 </div>
                 <aside>
                     <div>
                         <h3>Tecnologias</h3>
-                            <div class="stack">
-                                <div class="tech">
-                                    <img src="assets/next-removebg-preview.png" alt="">
-                                    <p>NextJS</p>
-                                </div>
-                                <div class="tech">
-                                    <img src="assets/wind.png" alt="">
-                                    <p>TailWind</p>
-                                </div>
-                                <div class="tech">
-                                    <img src="assets/flutter.png" alt="">
-                                    <p>Flutter</p>
-                                </div>
-                                <div class="tech">
-                                    <img src="assets/html.png" alt="">
-                                    <p>HTML</p>
-                                    
-                                </div>
-                                <div class="tech">
-                                    <img src="assets/css.png" alt="">
-                                    <p>CSS</p>
-
-                                </div>
-                                <div class="tech">
-                                    <img src="assets/js.png" alt="">
-                                    <p>Javascript</p>
-                                </div>
+                        <div class="stack">
+                            <div class="tech">
+                                <img src="assets/next-removebg-preview.png" alt="">
+                                <p>NextJS</p>
                             </div>
+                            <div class="tech">
+                                <img src="assets/flutter.png" alt="">
+                                <p>Flutter</p>
+                            </div>
+                            <div class="tech">
+                                <img src="assets/react.png" alt="">
+                                <p>React</p>
+                            </div>
+                            
+                            <div class="tech">
+                                <img src="assets/Dart-logo.png" alt="">
+                                <p>Dart</p>
+                            </div>
+                            <div class="tech">
+                                <img src="assets/wind.png" alt="">
+                                <p>TailWind</p>
+                            </div>
+                            <div class="tech">
+                                <img src="assets/html.png" alt="">
+                                <p>HTML</p>
+
+                            </div>
+                            <div class="tech">
+                                <img src="assets/css.png" alt="">
+                                <p>CSS</p>
+
+                            </div>
+                            <div class="tech">
+                                <img src="assets/js.png" alt="">
+                                <p>Javascript</p>
+                            </div>
+                            
+                            <div class="tech">
+                                <img src="assets/type.png" alt="">
+                                <p>Typescript</p>
+                            </div>
+                            
+                            <div class="tech">
+                                <img src="assets/git.png" alt="">
+                                <p>Git</p>
+                            </div>
+                        </div>
                     </div>
                 </aside>
             </div>
         </article>
+        <section class="projects">
+            <h2>Projetos</h2>
+            <div class="my-projects">
+                <a href="https://instituto-aristoteles.netlify.app/" target="_blank" rel=noopener>
+                    <div class="project1">
+                        <div class="content1">
+                            <img src="assets/instituto.png" alt="Imagem do projeto">
+                            <div>
+                                <p class="project-title">Site instituto</p>
+                                <ul class="project-desc">
+                                    <li>• Implementação utilizando Next.js.</li>
+                                    <li>• Design e desenvolvimento de interfaces de usuário responsivas e atraentes.
+                                    </li>
+                                    <li>• Integração com o backend para garantir
+                                        uma comunicação eficiente.</li>
+                                    <li>• Otimização de desempenho e compatibilidade com navegadores e dispositivos.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <div class="content2">
+                    <a href="https://projeto-clinica-vet.vercel.app/" target="_blank" rel=noopener>
+                        <div class="project">
+                            <div class="content">
+                                <div class="img-content"><img src="assets/veterinario.png" alt="Imagem do projeto">
+                                </div>
+                                <div>
+                                    <p class="project-title">Clinica Veterinária</p>
+                                    <ul class="project-desc">
+                                        <li>• Implementação utilizando Next.js.</li>
+                                        <li>• Design e desenvolvimento de interfaces de usuário responsivas e atraentes.
+                                        </li>
+                                        <li>• Integração com o backend para garantir
+                                            uma comunicação eficiente.</li>
+                                        <li>• Otimização de desempenho e compatibilidade com navegadores e dispositivos.
+                                        </li>
+                                    </ul>
+                                    <div class="btn">
+                                        <a href="https://github.com/ArthurSimplicio/projeto-clinicaVet" target="_blank"
+                                            rel="">
+                                            <button>
+                                                Ver Código
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://arthur-burguer.vercel.app/" target="_blank" rel=noopener>
+                        <div class="project">
+                            <div class="content">
+                                <div class="img-content"><img src="assets/VITE.png" alt="Imagem do projeto"></div>
+                                <div>
+                                    <p class="project-title">Hamburgueria</p>
+                                    <ul class="project-desc">
+                                        <li>• Implementação utilizando Next.js.</li>
+                                        <li>• Design e desenvolvimento de interfaces de usuário responsivas e atraentes.
+                                        </li>
+                                        <li>• Integração com o backend para garantir
+                                            uma comunicação eficiente.</li>
+                                        <li>• Otimização de desempenho e compatibilidade com navegadores e dispositivos.
+                                        </li>
+                                    </ul>
+                                    <div class="btn">
+                                        <a href="https://github.com/ArthurSimplicio/ArthurBurguer" target="_blank">
+                                            <button>
+                                                Ver Código
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://arthursimplicio.github.io/js-developer-pokedex/" target="_blank" rel=noopener>
+                        <div class="project">
+                            <div class="content">
+                                <div class="img-content"><img src="assets/poke.png" alt="Imagem do projeto"></div>
+                                <div>
+                                    <p class="project-title">Pokedex</p>
+                                    <ul class="project-desc">
+                                        <li>• O código apresenta duas funcionalidades, a primeira é a exibição de uma lista de pokémons, obtidos da PokeAPI.</li>
+                                        <li>• Foram utilizadas as tecnologias Fetch e Promises para realizar as requisições à PokeAPI.</li>
+                                        <li>• A segunda funcionalidade é a busca por um pokémon específico, que é realizada por meio da API Rest..</li>
+                                        
+                                    </ul>
+                                    <div class="btn">
+                                        <a href="https://github.com/ArthurSimplicio/js-developer-pokedex"
+                                            target="_blank">
+                                            <button>
+                                                Ver Código
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="content2">
+                    <a href="https://arthursimplicio.github.io/VelhaGame/" target="_blank" rel=noopener>
+                        <div class="project">
+                            <div class="content">
+                                <div class="img-content"><img src="assets/Velha.png" alt="Imagem do projeto"></div>
+                                <div>
+                                    <p class="project-title">Jogo da Velha</p>
+                                    <ul class="project-desc">
+                                        <li>• O Projeto se trata de um jogo da velha (Tic Tac Toe), que apresenta uma interface de usuário agradável e interativa. O jogo utiliza a tecnologia CSS Grid para posicionar os elementos da interface.</li>
+                                        <li>• O código JavaScript utiliza manipulação do DOM para criar a interatividade do jogo. A lógica é implementada através de funções que verificam se alguma das combinações de vitória foi alcançada</li>                                        
+                                    </ul>
+                                    <div class="btn">
+                                        <a href="https://github.com/ArthurSimplicio/VelhaGame" target="_blank" rel="">
+                                            <button>
+                                                Ver Código
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://arthursimplicio.github.io/Calculadora/" target="_blank" rel=noopener>
+                        <div class="project">
+                            <div class="content">
+                                <div class="img-content"><img src="assets/Calc.png" alt="Imagem do projeto"></div>
+                                <div>
+                                    <p class="project-title">Calculadora</p>
+                                    <ul class="project-desc">
+                                        
+                                        <li>• No HTML, temos um formulário com uma série de botões de entrada para números e operações, além de um campo de texto para exibição dos valores inseridos e resultados.</li>
+                                        <li>• Com uma função para cada botão que insere o valor correspondente no campo de texto da calculadora. Também é utilizada uma função para processar as expressões aritméticas inseridas na calculadora e exibir o resultado na tela.
+                                        </li>
+                                    </ul>
+                                    <div class="btn">
+                                        <a href="https://github.com/ArthurSimplicio/Calculadora" target="_blank">
+                                            <button>
+                                                Ver Código
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://arthursimplicio.github.io/js-IMC/" target="_blank" rel=noopener>
+                        <div class="project">
+                            <div class="content">
+                                <div class="img-content"><img src="assets/IMC.png" alt="Imagem do projeto"></div>
+                                <div>
+                                    <p class="project-title">Calculadora IMC</p>
+                                    <ul class="project-desc">
+                                        <li>• O projeto é uma página web  que calcula o Índice de Massa Corporal (IMC) a partir de informações inseridas pelo usuário, utilizando JavaScript. A página tem um layout agradável e fácil de usar, com entrada de dados e um botão de cálculo, e exibe o resultado em uma caixa destacada na tela.</li>
+                                        
+                                    </ul>
+                                    <div class="btn">
+                                        <a href="https://github.com/ArthurSimplicio/js-IMC" target="_blank">
+                                            <button>
+                                                Ver Código
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <a href="https://instituto-aristoteles.netlify.app/" target="_blank" rel=noopener>
+                    <div class="project1">
+                        <div class="content1">
+                            <img src="assets/mobiles.png" alt="Imagem do projeto">
+                            <div>
+                                <p class="project-title">Ver Projetos Mobile</p>
+                               
+
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+
+            </div>
+        </section>
+        <footer>
+            <hr>
+            <div class="footer">
+                <a href="#" class="logo"><span class="name">Arthur</span><span class="dev">DEV</span><span
+                        class="name">Simplício</span></a>
+                <p>2024&copy; Todos os direitos reservados.</p>
+            </div>
+        </footer>
     </main>
-    
+
     <script src="index.js"></script>
 </body>
 
 </html>
-
