@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: monospace;
+}
+
+:root {
+    --green: #5CDEAA;
+    --blue: #44307B;
+    --gray: #F3F0F5;
+}
+html, body{
+    width: 100vw;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 3rem;
+}
+
+.prev-btn:hover {
+    transform: scale(1.2);
+}
+
+.prev-btn {
+    border: solid black 1px;
+    transition: all .8s;
+    background-color: var(--gray);
+    position: fixed;
+    top: 50px;
+    left: 10px;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title .tech{
+    margin-left: 3px;
+    background-color: var(--gray);
+    border-radius: .5rem;
+    border: black solid 1px;
+}
+.title .tech img{
+    height: 52px;
+}
+.schedule-project {
+    padding: 0 10px;
+    width: 100vw;
+    height: 750px;
+    background-color: var(--green);
+}
+.title h2 {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 2rem;
+}
+.screens{
+    gap: 10px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.screens img{
+    height: 273px;
+    
+}
+.screens .name{
+    font-size: 1.5rem;
+}
+.desc{
+    display: none;
+    font-size: 17px;
+    width: 203px;
+}
+.cripto-project{
+    background-color: var(--gray);
+}
+.music-project{
+    color: var(--gray);
+    background-color: var(--blue);
+}
+
+@media (min-width:910px){
+    .desc{
+        display: block;
+    }
+    .title .tech{
+        margin-left: 10px;
+    }
+    
+    .schedule-project {
+        padding: 0 10px;
+        width: 100vw;
+        height: 700px;
+    }
+    .cripto-project {
+        padding: 0 10px;
+        width: 100vw;
+        height: 700px;
+    }
+    
+    .screens img{
+        height: 457px;
+    }
+    .screens{
+        display: flex;
+        justify-content: center;
+    }
+    .screen-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.6rem;
+        gap: 5px;
+    }
+}
+
+
+@media (min-width:760px) {
+    .prev-btn {
+        left: 100px;
+    }
+}
